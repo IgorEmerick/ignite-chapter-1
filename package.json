@@ -5,10 +5,14 @@
   "repository": "git@github.com:PhobosXD/ignite.git",
   "author": "Igor Emerick <igorbarbosaemerick@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
   "dependencies": {
     "@types/express": "^4.17.11"
   },
   "devDependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
   }
 }
