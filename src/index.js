@@ -119,6 +119,14 @@ app.get('/account', verifyIfExistAccountCpf, (req, res) => {
   const { customer } = req;
 
   return res.json(customer);
+});
+
+app.delete('/account', verifyIfExistAccountCpf, (req, res) => {
+  const { customer } = req;
+
+  customers.splice(customer, 1);
+
+  return res.status(204).send();
 })
 
 app.listen(port);
